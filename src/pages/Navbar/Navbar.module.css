@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+.navhead{
+    font-family: 'Caveat';
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.navbar{
+    margin-left: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}

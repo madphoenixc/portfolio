@@ -1,0 +1,29 @@
+.homeContainer{
+    height: 85vh;
+}
+.homeBody{
+    height: inherit;
+    width: 100%;
+    margin: 0;
+}
+
+.homePhoto{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+
+    .homeContainer{
+        height: 75vh;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+
+    .homeContainer{
+        height: auto;
+    }
+    
+}
