@@ -1,5 +1,5 @@
 .homeContainer{
-    height: 85vh;
+    height: 83vh;
 }
 .homeBody{
     height: inherit;
@@ -9,21 +9,20 @@
 
 .homePhoto{
     height: 100%;
-    width: 100%;
+    width: 95%;
 }
 
 @media screen and (max-width:768px){
-
     .homeContainer{
-        height: 75vh;
-    }
-    
+        height: 80vh;
+    }   
 }
 
 @media screen and (max-width:600px){
-
     .homeContainer{
         height: auto;
     }
-    
+    .homeContainer .homeCol{
+        margin-bottom: 10%;
+    }
 }
