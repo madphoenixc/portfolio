@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/92.8c364e2b.chunk.js","mappings":"sIAUA,UARA,WACI,OACI,gBAAKA,GAAG,UAAR,oBAIP,C","sources":["pages/Contact/contact.jsx"],"sourcesContent":["import React from 'react';\n\nfunction Contact() {\n    return (\n        <div id=\"contact\">\n            Contact\n        </div>\n    );\n}\n\nexport default Contact;"],"names":["id"],"sourceRoot":""}
