@@ -11,3 +11,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 1px;
 }
+.navlink{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navlink:hover,.active {
+    color: #59e4d8;
+}
+

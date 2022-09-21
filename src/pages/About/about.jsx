@@ -1,9 +1,10 @@
 import React from 'react';
+import classes from "./about.module.css"
 
-function About(props) {
+function About() {
     return (
-        <div id="about">
-            About
+        <div>
+            <h1 className="header">About Me</h1>
         </div>
     );
 }
