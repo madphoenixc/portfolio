@@ -25,7 +25,6 @@ const NavBar = () => {
             <Nav className={classes.navbar}>
               <Nav.Link ><Link className={navFunction("/")} to="/">Home</Link></Nav.Link>
               <Nav.Link><Link className={navFunction("/about")}  to="/about">About</Link></Nav.Link>
-              <Nav.Link><Link className={navFunction("/skills")}  to="/skills">Skills</Link></Nav.Link>
               <Nav.Link><Link className={navFunction("/experience")}  to="/experience">Experience</Link></Nav.Link>
               {/* <Nav.Link href="works">Works</Nav.Link> */}
               <Nav.Link><Link className={navFunction("/contact")}  to="/contact">Contact</Link></Nav.Link>
