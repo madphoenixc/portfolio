@@ -7,7 +7,6 @@ import { Link,useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const location = useLocation();
-  console.log("location",location)
 
   const navFunction = (path) =>{
     return location.pathname === path ? `${classes.navlink} ${classes.active}` : `${classes.navlink}`

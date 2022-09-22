@@ -1,0 +1,42 @@
+.bar div:nth-child(1) div div{
+    background-color: #025492 !important;
+    animation: html 1s linear forwards;
+}
+
+.bar div:nth-child(2) div div{
+    background-color: #F6C324 !important;
+    animation: js 1s linear forwards;
+}
+
+.bar div:nth-child(3) div div{
+    background-color: #025492 !important;
+    animation: react 1s linear forwards;
+}
+
+.bar div:nth-child(4) div div{
+    background-color: #F6C324 !important;
+    animation: react 1s linear forwards;
+}
+
+.bar div:nth-child(5) div div{
+    background-color: #025492 !important;
+    animation: js 1s linear forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes js {
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes react {
+    100% {
+        width: 25%;
+    }
+}

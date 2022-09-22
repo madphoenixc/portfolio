@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { LoaderProvider } from "./components/context/LoaderContext";
 import Loading from "./components/Loader/Loading";
-import Background from "./pages/Common/Background";
 const NavBar = lazy(() => import("./pages/Navbar/Navbar"));
 const Home = lazy(() => import("./pages/Home/home"));
 const Experience = lazy(() => import("./pages/Experience/experience"));

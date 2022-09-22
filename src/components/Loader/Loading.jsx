@@ -5,7 +5,7 @@ import { Spinner } from "react-bootstrap";
 export default function Loader() {
   return (
     <div className={classes.loader +" d-flex justify-content-center align-items-center"}>
-      <Spinner animation="border" />
+      <Spinner animation="grow" />
     </div>
   );
 }
