@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import classes from "./about.module.css";
 import { Row, Col, Table, Button } from "react-bootstrap";
 import { LoaderContext } from "../../components/context/LoaderContext";
+import Resume from "../../assets/resume.pdf";
 
 function About() {
   const skills = [
@@ -11,6 +12,7 @@ function About() {
     { skill: "Node JS", rating: 25 },
     { skill: "My SQL", rating: 50 },
   ];
+
 
   const { loading, setLoading } = useContext(LoaderContext);
 
@@ -127,16 +129,15 @@ function About() {
                         borderColor: "#FAD02C",
                         color: "#13344C",
                         fontWeight: "600",
-                        marginTop:"3%"
+                        marginTop:"3%",
                       }}
-                      onClick={() => {}}
                     >
-                      Download CV
+                      <a href={Resume} download={"Resume_MadhanC"}>Download CV</a>
                     </Button>
                   </div>
                 </Col>
                 <Col md={6} lg={5} xl={6}>
-                  <div>
+                  <div className="mt-4">
                     <h1 style={{ color: "#050A30" }}>My Skills</h1>
                     <div className={classes.bar}>
                       {skills.map((sk) => {
