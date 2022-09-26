@@ -3,16 +3,16 @@ import classes from "./about.module.css";
 import { Row, Col, Table, Button } from "react-bootstrap";
 import { LoaderContext } from "../../components/context/LoaderContext";
 import Resume from "../../assets/resume.pdf";
+import Education from "../../components/Education/education";
 
 function About() {
   const skills = [
-    { skill: "HTML5/CSS3", rating: 75 },
-    { skill: "Javascript", rating: 50 },
-    { skill: "React JS", rating: 25 },
-    { skill: "Node JS", rating: 25 },
-    { skill: "My SQL", rating: 50 },
+    { skill: "HTML5/CSS3", rating: 90 },
+    { skill: "Javascript", rating: 85 },
+    { skill: "React JS", rating: 85 },
+    { skill: "Node JS", rating: 75 },
+    { skill: "My SQL", rating: 60 },
   ];
-
 
   const { loading, setLoading } = useContext(LoaderContext);
 
@@ -129,44 +129,51 @@ function About() {
                         borderColor: "#FAD02C",
                         color: "#13344C",
                         fontWeight: "600",
-                        marginTop:"3%",
+                        marginTop: "3%",
                       }}
                     >
-                      <a href={Resume} download={"Resume_MadhanC"}>Download CV</a>
+                      <a href={Resume} download={"Resume_MadhanC"}>
+                        Download CV
+                      </a>
                     </Button>
                   </div>
                 </Col>
                 <Col md={6} lg={5} xl={6}>
                   <div className="mt-4">
                     <h1 style={{ color: "#050A30" }}>My Skills</h1>
-                    <div className={classes.bar}>
-                      {skills.map((sk) => {
-                        return (
-                          <div className="mb-3">
-                            <p className="text-start m-0 mb-1">{sk.skill}</p>
-                            <div class={"progress"}>
-                              <div
-                                class="progress-bar bg-primary"
-                                role="progressbar"
-                                aria-label={sk}
-                                style={{ width: "0%" }}
-                                aria-valuenow={sk.rating}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              >
-                                {sk.rating}%
+                    <div className="d-flex justify-content-center">
+                      <div className={classes.bar}>
+                        {skills.map((sk) => {
+                          return (
+                            <div className="mb-3">
+                              <p className="text-start m-0 mb-1">
+                                <span>{sk.skill}</span>
+                                <span className="float-end me-3">
+                                  {sk.rating}%
+                                </span>
+                              </p>
+                              <div class={"progress"} style={{ height: "7px" }}>
+                                <div
+                                  class="progress-bar bg-primary"
+                                  role="progressbar"
+                                  aria-label={sk}
+                                  style={{ width: "0%",borderRadius:"5px" }}
+                                  aria-valuenow={sk.rating}
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                ></div>
                               </div>
                             </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div> 
                     </div>
                   </div>
                 </Col>
               </Row>
             </div>
           </div>
-          <h1 className="header">Education</h1>
+          <Education />
         </div>
       )}
     </>

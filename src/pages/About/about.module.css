@@ -1,42 +1,58 @@
+.bar {
+    width: 80%;
+}
+
 .bar div:nth-child(1) div div{
-    background-color: #025492 !important;
+    background:linear-gradient(90deg, #ede4bf 0%,#60A3D9 25%,#0074B7 65%,#832828 100%) !important;    
     animation: html 1s linear forwards;
 }
 
 .bar div:nth-child(2) div div{
-    background-color: #F6C324 !important;
     animation: js 1s linear forwards;
+    background:linear-gradient(90deg,#fffab0 0%,#faf27f 25%,#ffcd45 75%,#ff8431 100%) !important;
 }
 
 .bar div:nth-child(3) div div{
-    background-color: #025492 !important;
+    background:linear-gradient(90deg, #BFD7ED 0%,#60A3D9 25%,#0074B7 65%,#832828 100%) !important;    
     animation: react 1s linear forwards;
 }
 
 .bar div:nth-child(4) div div{
-    background-color: #F6C324 !important;
-    animation: react 1s linear forwards;
+    background:linear-gradient(90deg,#fffab0 0%,#faf27f 25%,#ffcd45 75%,#ff8431 100%) !important;
+    animation: node 1s linear forwards;
 }
 
 .bar div:nth-child(5) div div{
-    background-color: #025492 !important;
-    animation: js 1s linear forwards;
+    background:linear-gradient(90deg, #BFD7ED 0%,#60A3D9 25%,#0074B7 65%,#832828 100%) !important;
+    animation: sql 1s linear forwards;
 }
 
 @keyframes html {
     100% {
-        width: 75%;
+        width: 90%;
     }
 }
 
 @keyframes js {
     100% {
-        width: 50%;
+        width: 85%;
     }
 }
 
 @keyframes react {
     100% {
-        width: 25%;
+        width: 85%;
+    }
+}
+
+@keyframes node {
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes sql {
+    100% {
+        width: 60%;
     }
 }
