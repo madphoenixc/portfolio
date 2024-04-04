@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Row, Col, Button } from "react-bootstrap";
 import classes from "./home.module.css";
-import myPhoto from "../../assets/myphoto.png";
+// import myPhoto from "../../assets/myphoto.svg";
 import { useNavigate } from "react-router-dom";
 import { LoaderContext } from "../../components/context/LoaderContext";
 
@@ -26,7 +26,7 @@ function Home() {
         <div id="home" className={classes.homeContainer}>
           <Row className={classes.homeBody + " mt-4"}>
             <Col md={5} style={{ height: "100%" }} className={classes.homeCol}>
-              <img src={myPhoto} className={classes.homePhoto} />
+              {/* <img src={myPhoto} className={classes.homePhoto} /> */}
             </Col>
 
             <Col
